@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TourGuide</string>
+    <string name="tab_text_1">Spots</string>
+    <string name="tab_text_2">Food</string>
+    <string name="tab_text_3">INFO</string>
+    <string name="tab_text_4">Direction</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+</resources>
