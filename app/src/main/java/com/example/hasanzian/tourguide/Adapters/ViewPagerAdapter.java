@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.hasanzian.tourguide.fragments.TabFourFragment;
 import com.example.hasanzian.tourguide.fragments.TabOneFragment;
-import com.example.hasanzian.tourguide.fragments.TabThreeFragment;
+import com.example.hasanzian.tourguide.fragments.SpotsFragment;
 import com.example.hasanzian.tourguide.fragments.TabTwoFragment;
 
 /**
@@ -26,13 +26,14 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         // getItem is called to instantiate the fragment for the given page.
         // Return a Fragment (defined as a static inner class below).
         if (position == 0) {
-            return new TabOneFragment();
+            return new SpotsFragment();
+
         }
         else if(position == 1){
             return new TabTwoFragment();
         }
         else if(position == 2){
-            return new TabThreeFragment();
+            return new TabOneFragment();
         }
         else {
             return new TabFourFragment();

@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar =  findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPager mViewPager = findViewById(R.id.container);
         mViewPager.setAdapter(mViewPagerAdapter);
 
-        TabLayout tabLayout =  findViewById(R.id.tabs);
+        TabLayout tabLayout = findViewById(R.id.tabs);
 
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
@@ -78,14 +78,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
     }
-
-
-
-
-
 
 
 }

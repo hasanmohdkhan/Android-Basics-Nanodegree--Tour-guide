@@ -5,6 +5,13 @@
     <string name="tab_text_3">INFO</string>
     <string name="tab_text_4">Direction</string>
     <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="orcha_info">Orchha is famous tourist place of bundelkhand.Orchha is town in Tikamgarh district which was established by Bundela chief, Rudra Pratap Singh.</string>
+    <string name="orchha_str">Orchha</string>
+    <string name="Jhansi_info">At a distance of 4 km from Jhansi Junction, Jhansi Fort or Jhansi ka Kila is an ancient and historical fortress situated in the heart of Jhansi, Uttar Pradesh.</string>
+    <string name="jhansi_str">Jhansi Fort</string>
+    <string name="khajuraho_info">Khajuraho is a town in the Indian state of Madhya Pradesh, located in Chhatarpur District.One of the most popular tourist destinations in India.</string>
+    <string name="khajuraho_str">Khajuraho</string>
+    <string name="chitrakoot_str">Chitrakoot</string>
+    <string name="chittrakoot_str">Chitrakoot is a town in the Satna district in the state of Madhya Pradesh, India. It is a town of religious, cultural, historical, situated in the Bundelkhand region.</string>
 
 </resources>
