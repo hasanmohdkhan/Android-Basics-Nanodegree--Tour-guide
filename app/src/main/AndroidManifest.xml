@@ -24,7 +24,12 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".DetailsActivity"></activity>
+        <activity
+            android:name=".DetailsActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

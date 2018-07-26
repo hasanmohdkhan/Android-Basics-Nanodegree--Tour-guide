@@ -13,5 +13,7 @@
     <string name="khajuraho_str">Khajuraho</string>
     <string name="chitrakoot_str">Chitrakoot</string>
     <string name="chittrakoot_str">Chitrakoot is a town in the Satna district in the state of Madhya Pradesh, India. It is a town of religious, cultural, historical, situated in the Bundelkhand region.</string>
+    <string name="tap_for_info_str">Tap for info</string>
+    <string name="trans_name">imagetrans</string>
 
 </resources>

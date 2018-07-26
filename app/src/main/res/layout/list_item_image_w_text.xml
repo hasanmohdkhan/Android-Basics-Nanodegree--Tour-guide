@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/c4">
+    android:background="@color/c4"
+    android:orientation="vertical">
 
 
         <android.support.v7.widget.CardView
+            style="@style/CardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            app:cardElevation="8dp"
-            style="@style/CardView">
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:cardElevation="8dp">
 
             <RelativeLayout
                 android:id="@+id/background_layout"
@@ -28,19 +29,20 @@
                android:layout_width="match_parent"
                android:layout_height="200dp"
                android:contentDescription="@string/app_name"
-               android:src="@drawable/orcha_place_compress"
                android:scaleType="fitXY"
+               android:src="@drawable/orcha_place_compress"
+               android:transitionName="@string/trans_name"
                />
           <TextView
               android:id="@+id/main_tx"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              tools:text="Hello"
+              android:layout_below="@id/image"
+              android:layout_marginStart="16dp"
+              android:layout_marginTop="8dp"
               android:textColor="@color/c4"
               android:textSize="20sp"
-              android:layout_marginTop="8dp"
-              android:layout_marginStart="16dp"
-              android:layout_below="@id/image"
+              tools:text="Hello"
 
               />
 
@@ -49,14 +51,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/main_tx"
+                    android:layout_marginBottom="8dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
-                    android:textSize="12sp"
-                    android:textColor="@color/colorPrimary"
-                    tools:text="@string/orcha_info"
                     android:maxLines="3"
                     android:textAlignment="textStart"
-                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    tools:text="@string/orcha_info"
                     />
 
             </RelativeLayout>
