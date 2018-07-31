@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorIcons"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        tools:style="cardViewStyle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/hotel_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/haveli" />
+
+            <View
+                android:id="@+id/fadeBackgroudView"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@+id/hotel_image"
+                android:layout_marginTop="120dp"
+                android:foreground="@drawable/gradient_two" />
+
+            <TextView
+                android:id="@+id/hotel_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="150dp"
+                android:text="@string/haveli_restaurant_str"
+                android:textColor="@color/colorIcons" />
+
+            <TextView
+                android:id="@+id/hotel_address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="170dp"
+                android:text="@string/haveli_address_str"
+                android:textColor="@color/colorIcons"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

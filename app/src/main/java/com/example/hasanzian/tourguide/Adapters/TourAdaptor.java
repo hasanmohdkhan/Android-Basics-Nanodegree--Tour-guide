@@ -23,15 +23,7 @@ import java.util.List;
 
 public class TourAdaptor extends ArrayAdapter<Model> {
 
-    static class ViewHolder {
-        private TextView placeName;
-        private TextView info;
-        private ImageView imageView;
-
-    }
-
-
-    public TourAdaptor(@NonNull Context context , @NonNull List<Model> objects) {
+    public TourAdaptor(Context context, List<Model> objects) {
         super(context, 0, objects);
     }
 
@@ -39,20 +31,41 @@ public class TourAdaptor extends ArrayAdapter<Model> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
       View listItemView = convertView;
-      ViewHolder holder;
-
+        ViewHolder holder;
+        Model current = getItem(position);
         if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_image_w_text, parent, false);
-            holder = new ViewHolder();
-            holder.placeName = listItemView.findViewById(R.id.main_tx);
-            holder.info = listItemView.findViewById(R.id.sub_tx);
-            holder.imageView = listItemView.findViewById(R.id.image);
-            listItemView.setTag(holder);
+            if (current.getmFragmentCode() == 3) {
+                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.info_item, parent, false);
+                holder = new ViewHolder();
+                holder.placeName = listItemView.findViewById(R.id.hotel_name_tv);
+                holder.info = listItemView.findViewById(R.id.hotel_address_tv);
+                holder.imageView = listItemView.findViewById(R.id.hotel_image);
+                listItemView.setTag(holder);
+            } else if (current.getmFragmentCode() == 2) {
+                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.food_item, parent, false);
+                holder = new ViewHolder();
+                holder.placeName = listItemView.findViewById(R.id.hotel_name_tv);
+                holder.info = listItemView.findViewById(R.id.hotel_address_tv);
+                holder.imageView = listItemView.findViewById(R.id.hotel_image);
+                listItemView.setTag(holder);
+            } else {
+
+                listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_image_w_text, parent, false);
+                holder = new ViewHolder();
+                holder.placeName = listItemView.findViewById(R.id.main_tx);
+                holder.info = listItemView.findViewById(R.id.sub_tx);
+                holder.imageView = listItemView.findViewById(R.id.image);
+                listItemView.setTag(holder);
+            }
+
+
+
+
         } else {
             holder = (ViewHolder) listItemView.getTag();
         }
 
-        Model current = getItem(position);
+
 
 
         Typeface typeface = Typeface.createFromAsset(getContext().getAssets(), "font/OpenSans-SemiBold.ttf");
@@ -75,5 +88,12 @@ public class TourAdaptor extends ArrayAdapter<Model> {
             holder.imageView.setVisibility(View.GONE);
         }
       return listItemView;
+    }
+
+    private static class ViewHolder {
+        private TextView placeName;
+        private TextView info;
+        private ImageView imageView;
+
     }
 }

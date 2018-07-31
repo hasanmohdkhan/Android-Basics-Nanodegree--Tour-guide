@@ -27,9 +27,8 @@
         <activity
             android:name=".DetailsActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/NoActionBar">
-
-        </activity>
+            android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".InformationDetailsActivity"></activity>
     </application>
 
 </manifest>

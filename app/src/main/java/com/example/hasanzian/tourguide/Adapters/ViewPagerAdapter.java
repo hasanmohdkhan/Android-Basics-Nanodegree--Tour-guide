@@ -5,10 +5,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.hasanzian.tourguide.fragments.TabFourFragment;
-import com.example.hasanzian.tourguide.fragments.TabOneFragment;
+import com.example.hasanzian.tourguide.fragments.DirectionFragment;
+import com.example.hasanzian.tourguide.fragments.FoodFragment;
+import com.example.hasanzian.tourguide.fragments.InformationFragment;
 import com.example.hasanzian.tourguide.fragments.SpotsFragment;
-import com.example.hasanzian.tourguide.fragments.TabTwoFragment;
 
 /**
  * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -30,13 +30,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
         }
         else if(position == 1){
-            return new TabTwoFragment();
+            return new FoodFragment();
         }
         else if(position == 2){
-            return new TabOneFragment();
+            return new InformationFragment();
         }
         else {
-            return new TabFourFragment();
+            return new DirectionFragment();
         }
 
     }

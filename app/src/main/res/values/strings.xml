@@ -15,5 +15,15 @@
     <string name="chittrakoot_str">Chitrakoot is a town in the Satna district in the state of Madhya Pradesh, India. It is a town of religious, cultural, historical, situated in the Bundelkhand region.</string>
     <string name="tap_for_info_str">Tap for info</string>
     <string name="trans_name">imagetrans</string>
+    <string name="haveli_address_str">Jhokan Bagh, Jhansi, Uttar Pradesh</string>
+    <string name="haveli_restaurant_str">Haveli Restaurant</string>
+    <string name="baker_factory_str">The Bakers Factory</string>
+    <string name="baker_factory_address_str">Near Allahabad Bank, Station Road, Civil Lines, Jhansi</string>
+    <string name="ramraja_str">Ramraja restaurant</string>
+    <string name="ramraja_address_str">Orchha Palace Road,Orchha</string>
+    <string name="safari_str">Safari Canteen</string>
+    <string name="safari_address_str">Sevagram, Khajuraho, Madhya Pradesh</string>
+    <string name="temple_str">Temple Cafe</string>
+    <string name="temple_address_str">Radisson Hotel Khajuraho,By pass road, Khajuraho</string>
 
 </resources>

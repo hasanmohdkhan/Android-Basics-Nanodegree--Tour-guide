@@ -5,11 +5,12 @@ package com.example.hasanzian.tourguide.datamModel;
  */
 
 public class Model {
+    private static final int NO_IMAGE_PROVIDED = -1;
     private String mPlaceName;
     private String mPlaceInfo;
     private int mImageResource = NO_IMAGE_PROVIDED;
-
-    private static final int NO_IMAGE_PROVIDED = -1;
+    // 2 for food, 3 for info
+    private int mFragmentCode;
 
     public Model(String mPlaceName, String mPlaceInfo) {
         this.mPlaceName = mPlaceName;
@@ -20,6 +21,13 @@ public class Model {
         this.mPlaceName = mPlaceName;
         this.mPlaceInfo = mPlaceInfo;
         this.mImageResource = mImageResource;
+    }
+
+    public Model(String mPlaceName, String mPlaceInfo, int mImageResource, int mFragmentCode) {
+        this.mPlaceName = mPlaceName;
+        this.mPlaceInfo = mPlaceInfo;
+        this.mImageResource = mImageResource;
+        this.mFragmentCode = mFragmentCode;
     }
 
     public String getPlaceName() {
@@ -36,5 +44,9 @@ public class Model {
 
     public boolean hasImage(){
         return  mImageResource != NO_IMAGE_PROVIDED;
+    }
+
+    public int getmFragmentCode() {
+        return mFragmentCode;
     }
 }
