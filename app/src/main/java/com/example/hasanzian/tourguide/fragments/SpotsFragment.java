@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by hasanZian on 21-07-2018.
+ * famous attraction in area
  */
 
 public class SpotsFragment extends Fragment{
@@ -47,29 +47,20 @@ public class SpotsFragment extends Fragment{
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent detailIntent = new Intent(getContext(), DetailsActivity.class);
 
-//                Pair<View, String>[] pairs = new Pair[1];
-//
-//                pairs[0] = new Pair<View, String>(rootView.findViewById(R.id.image), getString(R.string.trans_name));
-//
-//                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pairs);
-//                startActivity(detailIntent, options.toBundle());
-
                 Model current = adaptor.getItem(position);
                 String title = current.getPlaceName();
                 String infoPlace = current.getPlaceInfo();
                 int imageId = current.getImageResource();
 
-                detailIntent.putExtra("T", title);
-                detailIntent.putExtra("I", infoPlace);
-                detailIntent.putExtra("ID", imageId);
+                detailIntent.putExtra(getString(R.string.t_key), title);
+                detailIntent.putExtra(getString(R.string.i_key), infoPlace);
+                detailIntent.putExtra(getString(R.string.id_image_key), imageId);
 
                 View sharedView = rootView.findViewById(R.id.item);
                 String transitionName = getString(R.string.trans_name);
 
                 ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(getActivity(), sharedView, transitionName);
                 startActivity(detailIntent, transitionActivityOptions.toBundle());
-
-
             }
         });
 

@@ -25,5 +25,47 @@
     <string name="safari_address_str">Sevagram, Khajuraho, Madhya Pradesh</string>
     <string name="temple_str">Temple Cafe</string>
     <string name="temple_address_str">Radisson Hotel Khajuraho,By pass road, Khajuraho</string>
+    <string name="icons_str">icons</string>
+    <string name="ideal_trip_duration_str">Ideal Trip Duration:</string>
+    <string name="nearest_city_str">Nearest City</string>
+    <string name="best_time_to_visit">Best Time to Visit</string>
+    <string name="state_str">State</string>
+    <string name="peak_season_str">Peak Season</string>
+    <string name="weather_str">Weather</string>
+    <string name="jhansi_weather_str">Summer: Max 42° C and Min 19°C\nWinter: Max 32° C and Mini 8° C</string>
+    <string name="place_to_visit_10">10 place to visit</string>
+    <string name="place_to_visit_3">3 place to visit</string>
+    <string name="place_to_visit_6">6 place to visit</string>
+    <string name="jhansi_best_time_visit_str">October to March</string>
+    <string name="jhansi_str_name">Jhansi</string>
+    <string name="state_up_str">Uttar Pradesh</string>
+    <string name="peak_season_jhansi">November to February</string>
+    <string name="trip_time_1_2_days">1–2 days</string>
+    <string name="bestTimeKey">BestTime</string>
+    <string name="season_key">Season</string>
+    <string name="TripdurationKey">TripDuration</string>
+    <string name="state_key">State</string>
+    <string name="weather_key">Weather</string>
+    <string name="nearest_key">NearestCity</string>
+    <string name="nearest_city_orchha_str">Jhansi (16 Kms)</string>
+    <string name="orchaa_state_str">Madhya Pradesh | District: Tikamgarh</string>
+    <string name="peak_season_orchha_str">November to January</string>
+    <string name="orchha_trip_duration">Full Day</string>
+    <string name="orchha_waether_str">Summer: Max 42°C and Min - 20°C\nWinter: Max 30°C and Min 7°C</string>
+    <string name="placeNameKey">PlaceName</string>
+    <string name="khajuraho_best_time_visi_strt">September to March</string>
+    <string name="khajuraho_nearest_city_str">Kanpur (223 Kms), Gwalior (283 Kms)</string>
+    <string name="khajuraho_state_str">Madhya Pradesh | District: Chhatarpur</string>
+    <string name="khajuraho_peak_season_str">November to February</string>
+    <string name="khajuraho_trip_duration">2 Full Days</string>
+    <string name="khajuraho_weather_str">Summer: Max 47°C and Min 21°C\nWinter: Max 27°C and Mini 4°C</string>
+    <string name="placeImageKey">PlaceImage</string>
+    <string name="toolbarImageTransitionName">toolbarImage</string>
+    <string name="click_to_view_map_str">click to view on map</string>
+    <string name="urlformap">http://maps.google.co.in/maps?q=</string>
+    <string name="t_key">T</string>
+    <string name="i_key">I</string>
+    <string name="id_image_key">ID</string>
+    <string name="image_of_place_content_desc">image of place</string>
 
 </resources>

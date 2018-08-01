@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by hasanZian on 21-07-2018.
+ * This Fragment display hotel list
  */
 
 public class FoodFragment extends Fragment {
@@ -38,7 +38,6 @@ public class FoodFragment extends Fragment {
 
         TourAdaptor adaptor = new TourAdaptor(getActivity(),list);
         listView.setAdapter(adaptor);
-
 
         return rootView;
     }

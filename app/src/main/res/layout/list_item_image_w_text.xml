@@ -27,7 +27,7 @@
            <ImageView
                android:id="@+id/image"
                android:layout_width="match_parent"
-               android:layout_height="200dp"
+               android:layout_height="@dimen/image_item_height_200dp"
                android:contentDescription="@string/app_name"
                android:scaleType="fitXY"
                android:src="@drawable/orcha_place_compress"
@@ -38,10 +38,10 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_below="@id/image"
-              android:layout_marginStart="16dp"
-              android:layout_marginTop="8dp"
+              android:layout_marginStart="@dimen/marigin_16dp"
+              android:layout_marginTop="@dimen/margin_8dp"
               android:textColor="@color/c4"
-              android:textSize="20sp"
+              android:textSize="@dimen/textview_size_20sp"
               tools:text="Hello"
 
               />
@@ -51,20 +51,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/main_tx"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginStart="@dimen/marigin_16dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
                     android:maxLines="3"
                     android:textAlignment="textStart"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/textsize_12sp"
                     tools:text="@string/orcha_info"
                     />
 
             </RelativeLayout>
         </android.support.v7.widget.CardView>
-
-
-
-
 </LinearLayout>

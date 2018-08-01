@@ -28,9 +28,9 @@ public class DetailsActivity extends AppCompatActivity {
                 .duration(2700).playOn(findViewById(R.id.description));
 
         Bundle bundle = getIntent().getExtras();
-        String titleFromList = bundle.getString("T");
-        String infoFromList = bundle.getString("I");
-        int idFromList = bundle.getInt("ID");
+        String titleFromList = bundle.getString(getString(R.string.t_key));
+        String infoFromList = bundle.getString(getString(R.string.i_key));
+        int idFromList = bundle.getInt(getString(R.string.id_image_key));
 
         Typeface typeface = Typeface.createFromAsset(this.getAssets(), "font/OpenSans-SemiBold.ttf");
         placeName.setTypeface(typeface);

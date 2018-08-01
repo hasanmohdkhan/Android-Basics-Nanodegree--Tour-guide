@@ -20,15 +20,14 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-
         <activity
             android:name=".DetailsActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/NoActionBar"></activity>
-        <activity android:name=".InformationDetailsActivity"></activity>
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".InformationDetailsActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/NoActionBar" />
     </application>
 
 </manifest>

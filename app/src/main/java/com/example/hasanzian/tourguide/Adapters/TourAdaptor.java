@@ -18,9 +18,8 @@ import com.example.hasanzian.tourguide.datamModel.Model;
 import java.util.List;
 
 /**
- * Created by hasan Zian on 21-07-2018.
+ * TourAdaptor is a custom adaptor for different list item view
  */
-
 public class TourAdaptor extends ArrayAdapter<Model> {
 
     public TourAdaptor(Context context, List<Model> objects) {
@@ -34,14 +33,14 @@ public class TourAdaptor extends ArrayAdapter<Model> {
         ViewHolder holder;
         Model current = getItem(position);
         if (listItemView == null) {
-            if (current.getmFragmentCode() == 3) {
+            if (current.getFragmentCode() == 3) {
                 listItemView = LayoutInflater.from(getContext()).inflate(R.layout.info_item, parent, false);
                 holder = new ViewHolder();
                 holder.placeName = listItemView.findViewById(R.id.hotel_name_tv);
                 holder.info = listItemView.findViewById(R.id.hotel_address_tv);
                 holder.imageView = listItemView.findViewById(R.id.hotel_image);
                 listItemView.setTag(holder);
-            } else if (current.getmFragmentCode() == 2) {
+            } else if (current.getFragmentCode() == 2) {
                 listItemView = LayoutInflater.from(getContext()).inflate(R.layout.food_item, parent, false);
                 holder = new ViewHolder();
                 holder.placeName = listItemView.findViewById(R.id.hotel_name_tv);
@@ -49,7 +48,6 @@ public class TourAdaptor extends ArrayAdapter<Model> {
                 holder.imageView = listItemView.findViewById(R.id.hotel_image);
                 listItemView.setTag(holder);
             } else {
-
                 listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_image_w_text, parent, false);
                 holder = new ViewHolder();
                 holder.placeName = listItemView.findViewById(R.id.main_tx);
@@ -57,16 +55,9 @@ public class TourAdaptor extends ArrayAdapter<Model> {
                 holder.imageView = listItemView.findViewById(R.id.image);
                 listItemView.setTag(holder);
             }
-
-
-
-
         } else {
             holder = (ViewHolder) listItemView.getTag();
         }
-
-
-
 
         Typeface typeface = Typeface.createFromAsset(getContext().getAssets(), "font/OpenSans-SemiBold.ttf");
         holder.placeName.setTypeface(typeface);
@@ -76,8 +67,6 @@ public class TourAdaptor extends ArrayAdapter<Model> {
 
         holder.placeName.setText(current.getPlaceName());
         holder.info.setText(current.getPlaceInfo());
-
-
 
         if(current.hasImage()){
             Glide.with(getContext()).load(current.getImageResource()).into(holder.imageView);

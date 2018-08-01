@@ -10,12 +10,12 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        app:cardCornerRadius="@dimen/margin_8dp"
+        app:cardElevation="@dimen/margin_4dp"
         tools:style="cardViewStyle">
 
         <RelativeLayout
@@ -24,19 +24,17 @@
 
             <ImageView
                 android:id="@+id/hotel_image"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:contentDescription="@string/app_name"
-                android:scaleType="fitXY"
-                android:src="@drawable/haveli" />
+                style="@style/FoodItemImage"
+                android:contentDescription="@string/image_of_place_content_desc"
+                tools:src="@drawable/haveli" />
 
             <View
                 android:id="@+id/fadeBackgroudView"
                 android:layout_width="wrap_content"
-                android:layout_height="80dp"
+                android:layout_height="@dimen/view_food_item_80dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignTop="@+id/hotel_image"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="@dimen/food_margin_top_120dp"
                 android:foreground="@drawable/gradient" />
 
             <TextView
@@ -44,25 +42,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="150dp"
-                android:text="@string/haveli_restaurant_str"
-                android:textColor="@color/colorIcons" />
+                android:layout_marginStart="@dimen/marigin_16dp"
+                android:layout_marginTop="@dimen/food_margin_top_150dp"
+                android:textColor="@color/colorIcons"
+                tools:text="@string/haveli_restaurant_str" />
 
             <TextView
                 android:id="@+id/hotel_address_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="170dp"
-                android:text="@string/haveli_address_str"
+                android:layout_marginStart="@dimen/marigin_16dp"
+                android:layout_marginTop="@dimen/food_margin_top_170dp"
                 android:textColor="@color/colorIcons"
-                android:textSize="12sp" />
+                android:textSize="@dimen/textsize_12sp"
+                tools:text="@string/haveli_address_str" />
         </RelativeLayout>
-
-
     </android.support.v7.widget.CardView>
-
-
 </LinearLayout>
