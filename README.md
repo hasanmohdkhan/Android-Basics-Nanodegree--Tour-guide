@@ -18,9 +18,7 @@ UI
 | Spot Tab | Food Tab | Info Tab | Direction Tab |
 | ------ | ------ | ------ | ------ |
 
-| <img src="https://github.com/hasanmohdkhan/Android-Basics-Nanodegree--Tour-guide/blob/master/device-2018-08-02-194904.png" width="600px"</img> | <img src="https://github.com/hasanmohdkhan/Android-Basics-Nanodegree--Tour-guide/blob/master/device-2018-08-02-195020.png" width="600px"</img> | <img src="" width="600px"</img> | <img src="https://github.com/hasanmohdkhan/Android-Basics-Nanodegree--Tour-guide/blob/master/device-2018-08-02-195108.png" width="600px"</img> |
-
-
+![image](https://github.com/hasanmohdkhan/Android-Basics-Nanodegree--Tour-guide/blob/master/device-2018-08-02-194904.png) | ![image](https://github.com/hasanmohdkhan/Android-Basics-Nanodegree--Tour-guide/blob/master/device-2018-08-02-195020.png) | ![image](https://github.com/hasanmohdkhan/Android-Basics-Nanodegree--Tour-guide/blob/master/device-2018-08-02-195108.png) | ![image](https://github.com/hasanmohdkhan/Android-Basics-Nanodegree--Tour-guide/blob/master/device-2018-08-02-195234.png)
 
 
 
