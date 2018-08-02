@@ -10,7 +10,7 @@ UI
 <br>
 
 <div align="center">
-    <img src="" width="600px"</img> 
+   ![image](https://github.com/hasanmohdkhan/Android-Basics-Nanodegree--Tour-guide/blob/master/device-2018-08-02-194904.png)
 </div>
 <br>
 
