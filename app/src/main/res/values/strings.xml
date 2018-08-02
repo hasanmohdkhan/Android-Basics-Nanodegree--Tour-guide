@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TourGuide</string>
+    <string name="app_name">Tour Guide</string>
     <string name="tab_text_1">Spots</string>
     <string name="tab_text_2">Food</string>
     <string name="tab_text_3">INFO</string>
